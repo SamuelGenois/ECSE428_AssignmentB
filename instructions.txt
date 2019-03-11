@@ -1,0 +1,38 @@
+Instructions
+----------------------------------------
+
+Notes:
+    -   These instructions have only been tested on and are assumed to only work on
+        the Windows 10 operating system.
+
+
+Setup of the Test Environment
+----------------------------------------
+
+1:  Download the project folder at https://github.com/SamuelGenois/ECSE428_AssignmentB
+
+2:  Download the Java SE Development Kit 8u201 at
+    https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+    Execute the installer and follow its instructions to install java
+    Create an environment variable JAVA_HOME with the absolute path to the jdk folder as a value
+
+3:  Download the Mozilla Firefox browser at https://www.mozilla.org/en-CA/firefox/new/
+    Execute the installer and follow its instructions to install Firefox
+
+
+Running Cucumber
+----------------------------------------
+
+1:  Open Command Prompt.
+    Navigate to the project folder.
+    Execute the command "gradlew test"
+    
+Adding Gherkin Scripts and Step Definitions
+----------------------------------------
+
+1:  Add the Gherkin script as a feature file (with the .feature extension)
+    in the src/test/resource folder within the project folder.
+
+2:  Add the corresponding step definition java file (with the .java extension)
+    in the src/test/java/asgb folder. All step defenitions classes must belong
+    to the asgb package.

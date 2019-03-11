@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies { 
+    testCompile 'io.cucumber:cucumber-java:4.2.5'
+    testCompile 'io.cucumber:cucumber-junit:4.2.6'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.seleniumhq.selenium:selenium-java:3.141.59'
+}

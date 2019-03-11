@@ -1,0 +1,30 @@
+Story Statement
+----------------------------------------
+
+Story:
+    As a Gmail user,
+    I want to send an email with an image attachment
+    so I can share the image with another email user.
+
+Normal Flow:
+    Given that I am on a new email page
+    When I enter a valid recipient email address
+    And I add a image to the email as an attachment
+    And I click the "Send" button
+    Then an "email sent" message is displayed
+    And the recipient recieves the email with the image attached
+
+Alternate Flow:
+    Given that I am on a new email page
+    When I enter multiple valid recipient email addresses
+    And I add a image to the email as an attachment
+    And I click the "Send" button
+    Then an "email sent" message is displayed
+    And each recipient recieves the email with the image attached
+
+Error Flow:
+    Given that I am on a new email page
+    When I enter an invalid recipient email addresses
+    And I add a image to the email as an attachment
+    And I click the "Send" button
+    Then I receive an email explaining that the address could not be found 

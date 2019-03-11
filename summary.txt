@@ -1,0 +1,15 @@
+Samuel Genois 260692287 samuel.genois@mail.mcgill.ca
+
+Deliverable Symmary
+----------------------------------------
+    -   Student name, id and email address: summary.txt
+    -   Statement of user story:            story.txt
+    -   Cucumber feature file:              src/test/resources/SendMailWithImage.feature
+    -   Source code of step definitions:    src/test/java/SendMailWithImage.java
+    -   Test environment installation:      instructions.txt
+    -   Test execution instructions:        instructions.txt
+    -   Instructions to add gherkin scripts
+        and step definitions:               instructions.txt
+    -   Test execution video:               video.mp4
+    -   Test environment description:       environment.txt
+    -   Comments of test environment:       environment.txt

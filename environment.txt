@@ -1,0 +1,66 @@
+Environment
+----------------------------------------
+
+Mozilla Firefox:
+  Mozilla Firefox is a free and open-source web browser.
+
+Selenium WebDriver:
+  Selenium WebDriver is an application allowing the automation of typical internet browser actions.
+  Bindings to the Java language were used.
+  
+geckodriver.exe:
+  An executable file that enable Selenium WebDriver to drive Firefox.
+
+JUnit:
+  A java unit test library.
+
+Cucumber:
+  Cucumber is a testing framework that interprets and run Gherkin scripts as tests
+  The Cucumber implementation is built on the JUnit testing framework.
+  It uses custom annotations to bind Gherkin script steps to testable methods.
+  In this test environment, cucumber is run over JUnit.
+
+Gradle:
+  Gradle is an open-source build automation tool
+  I used it to facilitate the download of dependencies I needed to use the aforementioned tools
+  and to script the execution of Cucumber acceptance test.
+
+Comments
+----------------------------------------
+
+This test environment is composed of many technologies and as such holds the
+advantages and disadvantages of each of those technologies
+
+Selenium WebDriver:
+Selenium WebDriver offers to the programming languages it supports
+(in this test environments case, java) the ability to drive a variety of commonly used web browsers.
+Selenium's API offers both portable components that work across multiple browsers and browser specific
+components for browser specific features. This unfortunately also means that Selenium is sensitive
+to any major changes in the codebase of the browsers it supports and that in some cases the.
+The websites themselves must also support the browser used for testing.
+Thus, there are some web application that this test environment, which only uses the
+Mozilla Firefox browser, can support.
+
+Gradle:
+  Gradle offers many essential software building and testing tasks that makes both the setup and
+  the execution of this test environment much easier. Thanks to the Gradle wrapper (gradlew.bat),
+  the building and execution of the environment can be done with a single cli command. Gradle itself
+  is not required to be installed. Gradle does require and mostly supports development of JVM reliant
+  software, thus using Gradle limits the language support of this test environment.
+
+Cucumber:
+  Cucumber enables the binding of executable automated test code with behavioral description of application
+  functionality no technical business language. This enables behavioral driven development where
+  non-technical member of the project can contribute. Cucumber is relatively simple in its structure. This
+  has the advantage of making Cucumber relatively simple to use and capable to accommodate many project source
+  code conventions, but can make the writing complex test scripts (such as those that try to modularise and reuse
+  test code) impractical. Cucumber also has the 
+
+Client-side testing of web applications:
+  In general, the automated testing of web applications on the client side requires knowledge. Having
+  automated tests written by testers unfamiliar with the source code is tedious and requires the
+  reverse engineering of html responses. This method of testing is also very sensitive to slight various
+  in the behavior of the web application, thus require regular maintenance.
+
+  
+
